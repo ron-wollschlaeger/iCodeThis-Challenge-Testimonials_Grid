@@ -46,3 +46,13 @@ moonIcon.addEventListener("click", () => {
 
 // invoke theme check on initial load
 themeCheck();
+
+//Menu toggle
+function menuToggle() {
+    var navContent = document.getElementById("navMenu");
+    if (navContent.style.display === "block") {
+      navContent.style.display = "none";
+    } else {
+      navContent.style.display = "block";
+    }
+  }
