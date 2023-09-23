@@ -49,10 +49,17 @@ themeCheck();
 
 //Menu toggle
 function menuToggle() {
+    var navIconOpen = document.getElementById("navIcon-open");
+    var navIconClose = document.getElementById("navIcon-close");
     var navContent = document.getElementById("navMenu");
+
     if (navContent.style.display === "block") {
       navContent.style.display = "none";
+      navIconClose.style.display = "none";
+      navIconOpen.style.display = "block";
     } else {
       navContent.style.display = "block";
+      navIconClose.style.display = "block";
+      navIconOpen.style.display = "none";
     }
   }

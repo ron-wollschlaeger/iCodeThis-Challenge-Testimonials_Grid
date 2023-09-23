@@ -84,26 +84,32 @@
     </button>
     <!-- Template END -->
 
-    <main class="bg-gray-200 dark:bg-gray-800 w-full h-96 z-10 shadow-lg mx-4 border-b-rose-500/50 dark:border-b-rose-900 border-b-2">
+    <main class="bg-gray-200 dark:bg-gray-800 w-full max-w-screen-lg h-96 z-10 shadow-lg mx-4 border-b-rose-500/50 dark:border-b-rose-900 border-b-2">
         <div class="w-full bg-gradient-to-r from-fuchsia-400 to-purple-300 dark:from-fuchsia-900 dark:to-purple-900 border-b-rose-500/50 dark:border-b-rose-900 border-b-2">
             <header class="flex justify-end p-2 items-center">
-                <button onclick="menuToggle()" class="text-gray-600 dark:text-gray-300 dark:hover:text-gray-100 hover:text-gray-800">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <button onclick="menuToggle()" class="md:hidden text-gray-600 dark:text-gray-300 dark:hover:text-gray-100 hover:text-gray-800">
+                    <svg id="navIcon-open" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <path d="M4 6l16 0"></path>
                         <path d="M4 12l16 0"></path>
                         <path d="M4 18l16 0"></path>
                     </svg>
+
+                    <svg id="navIcon-close" xmlns="http://www.w3.org/2000/svg" class="hidden icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M18 6l-12 12"></path>
+                        <path d="M6 6l12 12"></path>
+                     </svg>
                 </button>
             </header>
             
-            <nav id="navMenu" class="hidden px-4 pb-4 pt-2">
-                <ul class="flex flex-col text-center gap-1 dark:text-pink-200">
-                    <li class="block hover:bg-white/75 cursor-pointer dark:hover:text-pink-950">Popular</li>
-                    <li class="block hover:bg-white/75 cursor-pointer dark:hover:text-pink-950">News</li>
-                    <li class="block w-full hover:bg-white/75 cursor-pointer dark:hover:text-pink-950 bg-fuchsia-50/50 dark:text-white">Reviews</li>
-                    <li class="block hover:bg-white/75 cursor-pointer dark:hover:text-pink-950">Multimedia</li>
-                    <li class="block hover:bg-white/75 cursor-pointer dark:hover:text-pink-950">Twitter</li>
+            <nav id="navMenu" class="hidden md:block px-4 pb-4 pt-2">
+                <ul class="flex flex-col md:flex-row text-center md:text-left md:items-center gap-1 md:gap-2 dark:text-pink-200">
+                    <li class="block md:w-fit md:px-3 md:py-1 md:rounded-full hover:bg-white/75 cursor-pointer dark:hover:text-pink-950">Popular</li>
+                    <li class="block md:w-fit md:px-3 md:py-1 md:rounded-full hover:bg-white/75 cursor-pointer dark:hover:text-pink-950">News</li>
+                    <li class="block w-full md:w-fit md:px-3 md:py-1 md:rounded-full hover:bg-white/75 cursor-pointer dark:hover:text-pink-950 bg-fuchsia-50/50 dark:text-white">Reviews</li>
+                    <li class="block md:w-fit md:px-3 md:py-1 md:rounded-full hover:bg-white/75 cursor-pointer dark:hover:text-pink-950">Multimedia</li>
+                    <li class="block md:w-fit md:px-3 md:py-1 md:rounded-full hover:bg-white/75 cursor-pointer dark:hover:text-pink-950">Twitter</li>
                 </ul>
             </nav>
         </div>
