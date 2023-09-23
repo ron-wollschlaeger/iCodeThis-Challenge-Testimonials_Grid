@@ -10,7 +10,7 @@
 </head>
 
 <body
-    class="relative flex min-h-screen items-center justify-center bg-gradient-to-tr from-slate-50 dark:from-slate-950 to-emerald-100 dark:to-emerald-900 text-black dark:text-white">
+    class="relative flex min-h-screen items-center justify-center bg-gradient-to-tr from-pink-400 dark:from-pink-950 to-pink-50 dark:to-pink-800 text-gray-800 dark:text-white">
     <!-- Ron's basic template for iCodeThis challenges -->
     <!-- Background -->
     <div
@@ -31,7 +31,7 @@
     </div>
 
     <!-- Credits -->
-    <div class="absolute bottom-5 right-5 scale-50 hover:scale-110 transition-all origin-bottom-right">
+    <div class="absolute bottom-5 right-5 scale-50 hover:scale-100 transition-all origin-bottom-right">
         <a class="flex flex-col items-center" href="https://www.frontshape.de" target="_blank">
             <img class="block invert dark:invert-0 w-full max-w-[10rem]"
                 src="https://frontshape.de/wp-content/uploads/2023/05/H1-White.png" alt="">
@@ -84,8 +84,29 @@
     </button>
     <!-- Template END -->
 
-    <main class="bg-slate-200 dark:bg-stone-900 shadow-2xl z-10 w-60 h-60 font-bold uppercase grid place-content-center text-gray-800 dark:text-gray-200 my-40">
-        <span>Main content here</span>
+    <main class="bg-gray-200 dark:bg-gray-800 w-full h-96 z-10 shadow-lg mx-4">
+        <div class="w-full bg-gradient-to-r from-fuchsia-400 to-purple-300 dark:from-fuchsia-900 dark:to-purple-900 border-b-rose-500/50 dark:border-b-rose-800 border-b-2">
+            <header class="flex justify-end p-2 items-center">
+                <button class="text-gray-600 dark:text-gray-300 dark:hover:text-white hover:text-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 6l16 0"></path>
+                        <path d="M4 12l16 0"></path>
+                        <path d="M4 18l16 0"></path>
+                    </svg>
+                </button>
+            </header>
+            
+            <nav class="px-4 pb-4 pt-2">
+                <ul class="flex flex-col text-center gap-1 dark:text-pink-200">
+                    <li class="block hover:bg-white/75 cursor-pointer dark:hover:text-pink-950">Popular</li>
+                    <li class="block hover:bg-white/75 cursor-pointer dark:hover:text-pink-950">News</li>
+                    <li class="block hover:bg-white/75 cursor-pointer dark:hover:text-pink-950 w-full bg-fuchsia-50/50 dark:text-white sm:dark:border-fuchsia-200 sm:shadow sm:dark:bg-fuchsia-900 sm:rounded-full sm:px-5 sm:py-2">Reviews</li>
+                    <li class="block hover:bg-white/75 cursor-pointer dark:hover:text-pink-950">Multimedia</li>
+                    <li class="block hover:bg-white/75 cursor-pointer dark:hover:text-pink-950">Twitter</li>
+                </ul>
+            </nav>
+        </div>
     </main>
 
     <script src="./dist/main.js"></script>
